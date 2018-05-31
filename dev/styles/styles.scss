@@ -1,0 +1,23 @@
+@import 'setup';
+@import 'utils';
+@import 'typography';
+@import 'header';
+@import 'about';
+@import 'skills';
+@import 'projects';
+@import 'contact';
+
+//GLOBAL STYLES
+
+html {
+    font-size: 62.5%;
+    font-family: $main-text;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
