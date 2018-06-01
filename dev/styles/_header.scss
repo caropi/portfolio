@@ -4,4 +4,42 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        padding: 30px 45px 0 45px;
+        &-list {
+            width: 350px;
+            padding-left: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &__hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80vh;
+        &-text {
+            width: 60%;
+            position: relative;
+            margin-bottom: 50px;
+        }
+        &-text:before {
+            position: absolute;
+            content: '';
+            height: 175px;
+            left: 0px;
+            top: 22px;
+            width: 12px;
+            background: $mahogany;
+        }
+        &-description {
+            max-width: 435px;
+            margin-top: 0;
+            margin-bottom: 44px;
+        }
+    }
 }
