@@ -24,7 +24,7 @@
                     <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#">Skills</a>
+                    <a href="#skills">Skills</a>
                 </li>
                 <li>
                     <a href="#">Portfolio</a>
@@ -44,28 +44,33 @@
     </header>
     <main>
         <section class="about" id="about">
-            <div class="about__container wrapper">
+            <div class="about__container wrapper clearfix">
                 <div class="about__container-text">
-                    <h3 class="about__container-heading">Hello</h3>
+                    <h3 class="about__container-heading">Hello.</h3>
                     <div class="about__container-description">
                         <p>I'm a web developer based in Toronto, Canada. Prior to studying web development at HackerYou, I worked
                             in the publishing industry for 3.5 years distributing eBooks to several retailers and wholesalers.
                             Time travel roughly 2 decades ago and you'll find me learning to code and design on Neopets.
                             I've come a long way!</p>
-                        <p>When I'm not basking in the blue light of my laptop you'll find me wandering the city for good food,
-                            drawing, reading comics/graphic novels, playing video games, or sheet-masking. I'm constantly
-                            looking to refine my skills and pick up new ones along the way while coming to terms with the
-                            fact that 24 hours is not enough time in a day to learn everything.</p>
-                        <a href="#contact">Lets talk!</a>
+                        <p>When I'm not basking in the blue light of my laptop you'll find me wandering the city searching for
+                            delicious food, drawing, reading comics/graphic novels, playing video games, or sheet-masking.
+                            I'm constantly looking to build some javascript muscles and pick up new skills along the way.
+                            I'm still coming to terms with the fact that 24 hours is not enough time in a day to learn everything.</p>
+                        <a href="#contact">Lets talk
+                            <i class="far fa-comments"></i>
+                        </a>
+                        <img src="assets/2018-spring-caroline-pisano-4.jpg" alt="Photo of Caroline sitting on the red HackerYou chair">
                     </div>
                 </div>
-                <img src="assets/2018-spring-caroline-pisano-4.jpg" alt="Photo of Caroline sitting on the red HackerYou chair">
             </div>
         </section>
         <!--   jquery, responsive design -->
 
-        <section class="skills">
-            <ul class="skills__list">
+        <section class="skills" id="skills">
+            <div class="section-heading">
+                <h3>Skills.</h3>
+            </div>
+            <ul class="skills__list wrapper clearfix">
                 <li>
                     <i class="fab fa-html5"></i>
                 </li>
@@ -90,27 +95,29 @@
                 <li>
                     <svg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'>
                         <path d='M80,67C47,121-25,60,10,22C5,89,70,80,80,67zM30,16C2,42,56,87,80,47C70,57,24,57,30,16M50,10C45,34,72,37,80,31C57,55,32,21,50,10z'
-                            fill='#4082ae' />
+                        />
                     </svg>
                 </li>
                 <li>
                     <i class="fab fa-react"></i>
                 </li>
                 <li>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="256px"
-                        height="351px" viewBox="0 0 256 351" enable-background="new 0 0 256 351" space="preserve">
-                        <path fill="##272725" d="M0,282.998l2.123-2.973L102.527,89.512l0.212-2.017L58.479,4.358c-3.708-6.964-14.148-5.204-15.365,2.592
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 351"
+                        enable-background="new 0 0 256 351" space="preserve">
+                        <path d="M0,282.998l2.123-2.973L102.527,89.512l0.212-2.017L58.479,4.358c-3.708-6.964-14.148-5.204-15.365,2.592
                 L0,282.998z" />
-                        <path fill="##272725" d="M135.005,150.381l32.955-33.751l-32.964-62.93c-3.13-5.957-11.867-5.974-14.963,0l-17.612,33.589v2.861
+                        <path d="M135.005,150.381l32.955-33.751l-32.964-62.93c-3.13-5.957-11.867-5.974-14.963,0l-17.612,33.589v2.861
                 L135.005,150.381z" />
-                        <path fill="##272725" d="M139.121,347.551l116.275-64.848L222.191,78.209c-1.039-6.398-8.888-8.928-13.467-4.34L0,282.998
+                        <path d="M139.121,347.551l116.275-64.848L222.191,78.209c-1.039-6.398-8.888-8.928-13.467-4.34L0,282.998
                 l115.608,64.547C122.915,351.625,131.812,351.627,139.121,347.551" />
                     </svg>
                 </li>
             </ul>
         </section>
         <section class="portfolio">
-            <h3 class="portfolio__heading">Latest Works</h3>
+            <div class="section-heading">
+                <h3 class="portfolio__heading">Latest Works.</h3>
+            </div>
             <div class="portfolio__container">
                 <div class="portfolio__container-card">
                     <a href="http://carolinepisano.com/simpleflex/">
@@ -197,7 +204,9 @@
         </section>
 
         <section class="contact" id="contact">
-            <h3>Contact Me</h3>
+            <div class="section-heading">
+                <h3>Contact Me.</h3>
+            </div>
             <div class="contact__locate-me">
                 <div class="contact__locate-me-card">
                     <i class="far fa-paper-plane"></i>
