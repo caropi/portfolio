@@ -1,0 +1,26 @@
+.contact {
+    &__locate-me {
+        display: flex;
+        flex-direction: column;
+        &-card {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .myForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            input, textarea {
+                background: none;
+                border: none;
+                border-bottom: 5px solid $granny-smith;
+            }
+            button {
+                border-top-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                align-self: center;
+            }
+        }
+    }
+}

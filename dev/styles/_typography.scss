@@ -12,7 +12,7 @@
                 padding: 3px 15px;
                 transition: 0.3s;
             }
-            h2:hover {
+            h2:hover, h2:focus {
                 background: $granny-smith;
             }
         }
@@ -22,6 +22,9 @@
                 font-size: 1.4rem;
                 font-weight: 700;
             }
+        }
+        &:hover {
+
         }
     }
     &__hero {
@@ -42,7 +45,7 @@
             font-size: 1.8rem;
             font-weight: 300;
             line-height: 34px;
-            background: $urobilin;
+            background: lighten($urobilin, 15);
             padding: 12px;
         }
         &-jumpto {
@@ -62,7 +65,7 @@
             transition: 0.3s;
             letter-spacing: 1px;
         }
-        &-jumpto:hover {
+        &-jumpto:hover, &-jumpto:focus {
             background: $mahogany;
             color: $stark-white;
             border: 2px solid $mahogany;
@@ -122,7 +125,7 @@
     position: absolute;
     color: darken($granny-smith,5);
     font-family: $headings;font-size: 40rem;
-    bottom:0 ;
+    bottom:-14px; ;
     left: 0;
     z-index: -1;
     line-height: 0.8;
@@ -159,5 +162,97 @@
         width: 40px;
         height: 2px;
         background: $big-stone;
+    }
+}
+
+.portfolio {
+    &__container {
+        &-card-text {
+            font-family: $headings;
+            h4 {
+                text-transform: uppercase;
+                font-size: 2.4rem;
+                font-weight: 700;
+                line-height: 30px;
+                color: $big-stone;
+                margin: 0;
+                letter-spacing: 1px;
+            }
+            h5 {
+                color: $rose-fog;
+                font-size: 1.4rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 30px;
+                margin: 0;
+                letter-spacing: 1px;
+            }
+            p {
+                font-size: 1.4rem;
+                padding: 20px 0;
+                font-family: $main-text;
+                line-height: 28px;
+                margin: 0;
+                a {
+                    color: $granny-smith;
+                    transition: 0.3s;
+                    &:hover, &:focus {
+                        color: $urobilin;
+                    }
+                }
+            }
+            h6 {
+                margin: 0 0 30px 0;
+                color: lighten($mahogany, 20);
+                letter-spacing: 1px;
+                font-size: 1rem;
+            }
+            &-link {
+                margin-top: 15px;
+                a {
+                    font-family: $headings;
+                    width: 210px;
+                    padding: 10px;
+                    margin-right: 10px;
+                    text-transform: uppercase;
+                    font-size: 1.4rem;
+                    font-family: $headings;
+                    font-weight: 700;
+                    border: 2px solid $big-stone;
+                    border-top-left-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    text-align: center;
+                    color: $big-stone;
+                    transition: 0.3s;
+                    letter-spacing: 1px;     
+                    &:hover, &:focus {
+                        background: $urobilin;
+                        color: #fbf9f4;
+                        border: 2px solid $urobilin;
+                    }        
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    &__locate-me-card {
+        font-family: $headings;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
+    form {
+        input, textarea {
+            background: none;
+            font-family: $main-text;
+            color: $big-stone;
+            font-size: 1.4rem;
+            font-weight: 300;
+            line-height: 28px;
+        }
     }
 }

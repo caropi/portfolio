@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Caroline Pisano</title>
+    <link rel="icon" href="assets/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Montserrat:700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
         crossorigin="anonymous">
@@ -27,17 +28,17 @@
                     <a href="#skills">Skills</a>
                 </li>
                 <li>
-                    <a href="#">Portfolio</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
         <div class="header__hero wrapper">
             <h1 class="header__hero-text">Caroline Pisano. </h1>
             <p class="header__hero-description">Web Developer, sheet mask connoisseur, mochi and ramen enthusiast, and friend of cats.</p>
-            <a href="#" class="header__hero-jumpto">Projects
+            <a href="#portfolio" class="header__hero-jumpto">Projects
                 <i class="fas fa-arrow-right"></i>
             </a>
         </div>
@@ -50,8 +51,8 @@
                     <div class="about__container-description">
                         <p>I'm a web developer based in Toronto, Canada. Prior to studying web development at HackerYou, I worked
                             in the publishing industry for 3.5 years distributing eBooks to several retailers and wholesalers.
-                            Time travel roughly 2 decades ago and you'll find me learning to code and design on Neopets.
-                            I've come a long way!</p>
+                            Time travel roughly 2 decades ago and you would have found me learning to code and design on
+                            Neopets. I've come a long way!</p>
                         <p>When I'm not basking in the blue light of my laptop you'll find me wandering the city searching for
                             delicious food, drawing, reading comics/graphic novels, playing video games, or sheet-masking.
                             I'm constantly looking to build some javascript muscles and pick up new skills along the way.
@@ -114,22 +115,25 @@
                 </li>
             </ul>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="section-heading">
                 <h3 class="portfolio__heading">Latest Works.</h3>
             </div>
-            <div class="portfolio__container">
+            <div class="portfolio__container wrapper">
                 <div class="portfolio__container-card">
-                    <a href="http://carolinepisano.com/simpleflex/">
-                        <img src="assets/simpleflex.png" alt="Screenshot of Simpleflex page">
-                    </a>
+                    <div class="portfolio__container-card-screenshot">
+                        <a href="http://carolinepisano.com/simpleflex/" target="_blank">
+                            <img src="assets/simpleflex.png" alt="Screenshot of Simpleflex page">
+                        </a>
+                    </div>
                     <div class="portfolio__container-card-text">
                         <h4>Simpleflex</h4>
                         <h5>PSD Conversion</h5>
                         <p>Translated a PSD design into a pixel perfect, fully responsive page.</p>
+                        <h6>Sass/CSS3 | HTML5 | Adobe Assets/Photoshop</h6>
                         <div class="portfolio__container-card-text-link">
-                            <a href="http://carolinepisano.com/simpleflex/">View Live</a>
-                            <a href="https://github.com/caropi/simpleflex">View on GitHub</a>
+                            <a href="http://carolinepisano.com/simpleflex/" target="_blank">View Live</a>
+                            <a href="https://github.com/caropi/simpleflex" target="_blank">View on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -139,27 +143,33 @@
                         <h5>Javascript Quiz Application</h5>
                         <p>Created with the intention of aleiviating stress through cats and laughter. Uses Javascript to record
                             user inputs and generate a result that falls within specific ranges.</p>
+                        <h6>Javascript | jQuery | Sass/CSS3 | HTML5</h6>
                         <div class="portfolio__container-card-text-link">
-                            <a href="http://carolinepisano.com/medicat">View Live</a>
+                            <a href="http://carolinepisano.com/medicat" target="_blank">View Live</a>
                             <a href="https://github.com/caropi/medicat">View on GitHub</a>
                         </div>
                     </div>
-                    <a href="http://carolinepisano.com/medicat">
-                        <img src="assets/medicat.png" alt="Screenshot of Medicat page">
-                    </a>
+                    <div class="portfolio__container-card-screenshot">
+                        <a href="http://carolinepisano.com/medicat">
+                            <img src="assets/medicat.png" alt="Screenshot of Medicat page">
+                        </a>
+                    </div>
                 </div>
                 <div class="portfolio__container-card">
-                    <a href="ttp://www.carolinepisano.com/ineedahero">
-                        <img src="assets/ineedahero.png" alt="Screenshot of I Need a Hero page">
-                    </a>
+                    <div class="portfolio__container-card-screenshot">
+                        <a href="ttp://www.carolinepisano.com/ineedahero">
+                            <img src="assets/ineedahero.png" alt="Screenshot of I Need a Hero page">
+                        </a>
+                    </div>
                     <div class="portfolio__container-card-text">
                         <h4>I Need a Hero</h4>
                         <h5>AJAX/API Web Application</h5>
                         <p>A hero/header inspiration generator for pairing images with fonts. This app fetches fonts from the
                             Google Fonts API and background images from the Pixabay API based on user set preferences. Pair
                             programmed with
-                            <a href="http://haleybowes.com/">Haley Bowes</a>
+                            <a href="http://haleybowes.com/">Haley Bowes</a>.
                         </p>
+                        <h6>HTML5 | Javascript | jQuery | Sass/CSS3 | Team Programming | Rest APIs </h6>
                         <div class="portfolio__container-card-text-link">
                             <a href="http://www.carolinepisano.com/ineedahero">View Live</a>
                             <a href="https://github.com/caropi/INeedAHero">View on GitHub</a>
@@ -172,19 +182,24 @@
                         <h5>React and Firebase Application</h5>
                         <p>An application to help users select items in their own skincare cupboard/discover new products to
                             see it sorted with descriptions and instructions importing data from firebase database.</p>
+                        <h6>React | Javascript | ES6 |Git | Gulp | Design | Firebase</h6>
                         <div class="portfolio__container-card-text-link">
                             <a href="https://myskincarepal.firebaseapp.com/">View Live</a>
                             <a href="https://github.com/caropi/myskincarepal">View on GitHub</a>
                         </div>
                     </div>
-                    <a href="https://myskincarepal.firebaseapp.com/">
-                        <img src="assets/myskincarepal.png" alt="Screenshot of My.Skincare.Pal page">
-                    </a>
+                    <div class="portfolio__container-card-screenshot">
+                        <a href="https://myskincarepal.firebaseapp.com/">
+                            <img src="assets/myskincarepal.png" alt="Screenshot of My.Skincare.Pal page">
+                        </a>
+                    </div>
                 </div>
                 <div class="portfolio__container-card">
-                    <a href="https://whattoreadapp.firebaseapp.com/">
-                        <img src="assets/getlit.png" alt="Screenshot of Get Lit page">
-                    </a>
+                    <div class="portfolio__container-card-screenshot">
+                        <a href="https://whattoreadapp.firebaseapp.com/">
+                            <img src="assets/getlit.png" alt="Screenshot of Get Lit page">
+                        </a>
+                    </div>
                     <div class="portfolio__container-card-text">
                         <h4>Get Lit!</h4>
                         <h5>React, Firebase, and Goodreads API Application </h5>
@@ -194,6 +209,7 @@
                             <a href="https://meghansterling.ca/">Meghan Sterling</a> and
                             <a href="http://www.rckychng.com/">Rocky Chung</a>
                         </p>
+                        <h6>Team Programming | Javascript | jQuery | Rest API | Sass/CSS3 | HTML5</h6>
                         <div class="portfolio__container-card-text-link">
                             <a href="https://whattoreadapp.firebaseapp.com/">View Live</a>
                             <a href="https://github.com/caropi/whatToRead">View on GitHub</a>
@@ -207,13 +223,12 @@
             <div class="section-heading">
                 <h3>Contact Me.</h3>
             </div>
-            <div class="contact__locate-me">
+            <div class="contact__locate-me wrapper">
                 <div class="contact__locate-me-card">
                     <i class="far fa-paper-plane"></i>
-                    <a href="mailto:hello@carolinepisano.com">hello@carolinepisano.com</a>
+                    <a href="mailto:hello@carolinepisano.com">hello[at]carolinepisano[dot]com</a>
                 </div>
-                <form action="http://www.focuspocus.io/magic/ea56e8bf73be91a7e8892a32c78fa42b" method="POST" class="myForm wrapper" autocomplete="off"
-                    name="myForm">
+                <form action="http://www.focuspocus.io/magic/ea56e8bf73be91a7e8892a32c78fa42b" method="POST" class="myForm wrapper" name="myForm">
                     <label for="name" class="visuallyhidden">Name</label>
                     <input type="text" class="name" name="name" placeholder="Bill Murray" required>
                     <label for="email" class="visuallyhidden">Email Address</label>

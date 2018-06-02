@@ -1,0 +1,19 @@
+.portfolio {
+    &__container {
+        &-card {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 50px 0;
+        }        
+        &-card-screenshot {
+            width: calc(50% - 20px);
+            img {
+                width: 100%;
+            }
+        }
+        &-card-text {
+            width: 45%;
+        }
+    }
+}
