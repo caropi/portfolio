@@ -113,7 +113,7 @@
                     font-family: $headings;
                     letter-spacing: 2px;
                     font-size: 1.8rem;
-                    font-weight: 700;
+                    font-weight: 700;                   
                 }
             }
         }
@@ -140,10 +140,12 @@
 .section-heading {
     position: relative;
     font-family: $headings;
-    font-size: 5.8rem;
-    font-weight: 700;
-    text-align: center;
     color: $big-stone;
+    h3 {
+        font-size: 5.8rem;
+        font-weight: 700;
+        text-align: center;
+    }
     &:before {
         content: '';
         position: absolute;
@@ -244,6 +246,18 @@
         font-weight: 700;
         line-height: 24px;
         letter-spacing: 1px;
+        i {
+            font-size: 3.5rem;
+            color: $granny-smith;
+        }
+        a {
+            color: $big-stone;
+            transition: 0.3s all;
+            &:hover, &:focus {
+                color: $granny-smith;
+            }
+        }
+
     }
     form {
         input, textarea {
@@ -254,5 +268,19 @@
             font-weight: 300;
             line-height: 28px;
         }
+        button {
+            font-family: $headings;
+            text-transform: uppercase;
+            color: #fbf9f4;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: $big-stone;
+            transition: 0.3s all;
+            letter-spacing: 2px;
+            &:focus, &:hover {
+                background: $mahogany;
+            }
+        }
+    
     }
 }

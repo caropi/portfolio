@@ -1,0 +1,46 @@
+.footer {
+    position: relative;
+    padding: 100px 0;
+    &__list {
+        display: flex;
+        padding: 0;
+        flex-flow: row wrap;
+        li {
+            padding-right: 30px;
+            font-size: 1.4rem;
+            line-height: 24px;
+            a {
+                color: $big-stone;
+                transition: 0.3s all;
+                &:focus, &:hover {
+                    color: $rose-fog;
+                }
+            }
+        }
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 110px;
+        height: 1px;
+        background: $big-stone;
+    }
+    .home-stickie {
+        position: absolute;
+        right: 50%;
+        top: 0;
+        font-size: 2rem;
+        color: $rose-fog;
+        padding: 15px;
+        border: 1px solid $rose-fog;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transition: 0.3s all;
+        &:hover, &:focus {
+            color: #fbf9f4;
+            background: $rose-fog;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 .contact {
+    padding-bottom: 100px;
     &__locate-me {
         display: flex;
         flex-direction: column;
@@ -6,6 +7,9 @@
             text-align: center;
             display: flex;
             flex-direction: column;
+            i, a {
+                padding: 10px 0;
+            }
         }
         .myForm {
             display: flex;
@@ -14,12 +18,21 @@
             input, textarea {
                 background: none;
                 border: none;
-                border-bottom: 5px solid $granny-smith;
+                border-bottom: 2px solid $big-stone;
+                margin-bottom: 30px; 
+                transition: 0.3s all;
+                padding: 20px 20px;
+                resize: none;
+                &:hover, &:focus {
+                    border-bottom: 2px solid $urobilin;
+                }
             }
             button {
                 border-top-left-radius: 20px;
                 border-bottom-right-radius: 20px;
                 align-self: center;
+                margin-top: 10px;
+                padding: 18px 30px;
             }
         }
     }
