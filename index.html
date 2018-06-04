@@ -15,25 +15,30 @@
 
 <body>
     <header class="header" id="home">
-        <nav class="header__nav">
-            <a href="#home" class="header__nav-name-home">
+        <div class="header__topbar">
+            <a href="#home" class="header__topbar-name-home">
                 <h2>CP</h2>
             </a>
-            <ul class="header__nav-list menu">
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+            <div class="navToggle">
+                <div class="navToggleBar"></div>
+            </div>
+            <nav class="header__topbar-nav">
+                <ul class="header__topbar-nav-list menu">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <div class="header__hero wrapper">
             <h1 class="header__hero-text">Caroline Pisano. </h1>
             <p class="header__hero-description">Web Developer, sheet mask connoisseur, mochi and ramen enthusiast, and friend of cats.</p>
@@ -154,7 +159,7 @@
                         <h5>Javascript Quiz Application</h5>
                         <p>Created with the intention of aleiviating stress through cats and laughter. Uses Javascript to record
                             user inputs and generate a result that falls within specific ranges.</p>
-                        <h6>Javascript | jQuery | Sass/CSS3 | HTML5</h6>
+                        <h6>Javascript | jQuery | Sass/CSS3 | HTML5 | Design</h6>
                         <div class="portfolio__container-card-text-link">
                             <a href="http://carolinepisano.com/medicat" target="_blank">View Live</a>
                             <a href="https://github.com/caropi/medicat" target="_blank">View on GitHub</a>
@@ -239,11 +244,11 @@
                     <i class="far fa-paper-plane"></i>
                     <a href="mailto:hello@carolinepisano.com">hello[at]carolinepisano[dot]com</a>
                 </div>
-                <form action="http://www.focuspocus.io/magic/ea56e8bf73be91a7e8892a32c78fa42b" method="POST" class="myForm wrapper" name="myForm">
+                <form action="https://formspree.io/hello@carolinepisano.com" method="POST" class="myForm wrapper" name="myForm">
                     <label for="name" class="visuallyhidden">Name</label>
                     <input type="text" class="name" name="name" placeholder="Name" required>
                     <label for="email" class="visuallyhidden">Email Address</label>
-                    <input type="text" class="email" placeholder="Email" required>
+                    <input type="email" class="email" placeholder="Email" name="email" required>
                     <label for="message" class="visuallyhidden"></label>
                     <textarea name="message" rows="5" class="message" placeholder="Want to meet for coffee? Tell me about a good book you read? Share cat photos? Fire away."
                         required></textarea>

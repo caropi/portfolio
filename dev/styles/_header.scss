@@ -4,18 +4,138 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
-    &__nav {
+    @media (max-width: 800px) {
+        background-attachment: scroll;
+    }
+    &__topbar {
         position: relative;
-        display: flex;
-        justify-content: space-between;
-        flex-flow: row wrap;
-        padding: 30px 45px 0 45px;
-        &-list {
-            width: 350px;
-            padding-left: 0;
+        height: 13vh;
+        width: 100%;
+        
+        .navToggle, .navToggleBar {
+            display: none;
+            position: absolute;
+            @media (max-width:800px) {
+                display: block;
+            }
+        }
+        .navToggle {
+            -webkit-user-select: none;
+            -moz-uder-select: none;
+            user-select: none;
+            height: 2rem;
+            position: absolute;
+            top: 40%;
+            right: 3%;
+            width: 3.3rem;
+            z-index: 2;
+        }    
+        .navToggle:hover {
+            opacity: 0.8;
+        }    
+        // ANIMATIONS FOR HAMBURGER TOGGLE
+        .navToggle .navToggleBar,
+        .navToggle .navToggleBar::after,
+        .navToggle .navToggleBar::before {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            background: darken($urobilin, 10);
+            content: '';
+            height: 3px;
+            width: 100%; 
+            z-index: 10;
+        }
+
+
+        .navToggle .navToggleBar {
+            margin-top: 0; 
+        }
+
+        .navToggle .navToggleBar::after {
+            margin-top: 0.8rem; 
+        }
+
+        .navToggle .navToggleBar::before {
+            margin-top: -0.8rem; 
+        }
+
+        .navToggle.expanded .navToggleBar {
+            background: transparent; 
+        }
+        .navToggle.expanded .navToggleBar::after, .navToggle.expanded .navToggleBar::before {
+            background: $mahogany;
+            margin-top: 0; 
+        }
+
+        .navToggle.expanded .navToggleBar::after {
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); 
+        }
+
+        .navToggle.expanded .navToggleBar::before {
+            -ms-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); 
+        }    
+        // END OF TOGGLE ANIMATIONS
+        &-nav {
+            height: 13vh;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-end;
+            width: 70%;
+            -webkit-transition: left 0.5s ease;
+            -moz-transition: left 0.5s ease;
+            -ms-transition: left 0.5s ease;
+            -o-transition: left 0.5s ease;
+            transition: left 0.5s ease;
+            z-index: 1;
+            @media (max-width: 800px) {
+                & {
+                    display: none;
+                }
+            }
+            &-list {
+                justify-content: space-between;
+                width: 350px;
+                padding-left: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+        &-nav.expanded {
+            background: linear-gradient( rgba($stark-white, 0.95), rgba($stark-white,0.95));
+            transition: 0.3s all ease-in-out;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            left: o;
+            margin: 0;
+            width: 100%;
+            height: 50vh;
+            ul {
+                width: 100%;
+                height: 50vh;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                li {
+                    padding-left: 8%;
+                    a {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
         }
     }
     &__hero {

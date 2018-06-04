@@ -1,11 +1,17 @@
 .header {
     color: $big-stone;
-    &__nav {
-        font-family: $headings;
-        text-transform: uppercase;
+    &__topbar {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
         &-name-home {
+            font-family: $headings;
             font-size: 3rem;
             color: $stark-white;
+            padding-left: 45px;
             h2 {
                 background: $mahogany;
                 margin: 0;
@@ -16,13 +22,22 @@
                 background: $granny-smith;
             }
         }
-        &-list {
-            a {
-                color: $big-stone;
-                font-size: 1.4rem;
-                font-weight: 700;
+        &-nav {
+            font-family: $headings;
+            text-transform: uppercase;
+            align-self: flex-end;
+            &-list {
+                a {
+                    color: $big-stone;
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    transition: 0.3s;
+                    &:hover, &:focus {
+                        border-bottom: 5px solid $mahogany;
+                    }
+                }
             }
-        }
+        }      
     }
     &__hero {
         &-text, &-description {
@@ -49,6 +64,9 @@
             line-height: 34px;
             background: lighten($urobilin, 15);
             padding: 12px;
+            @media (max-width: 500px) {
+                font-size: 1rem;
+            }
         }
         &-jumpto {
             font-family: $headings;
@@ -78,6 +96,23 @@
             border: 2px solid $mahogany;
             text-shadow: none;
         }
+    }
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
     }
 }
 
@@ -120,8 +155,15 @@
                     font-family: $headings;
                     letter-spacing: 2px;
                     font-size: 1.8rem;
-                    font-weight: 700;                   
+                    font-weight: 700;   
+                    &:focus, &:hover {
+                        animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+                        transform: translate3d(0, 0, 0);
+                        backface-visibility: hidden;
+                        perspective: 1000px;                                    
+                    }
                 }
+
             }
         }
 
@@ -314,6 +356,7 @@
             background: $big-stone;
             transition: 0.3s all;
             letter-spacing: 2px;
+            border:none;
             &:focus, &:hover {
                 background: $mahogany;
             }

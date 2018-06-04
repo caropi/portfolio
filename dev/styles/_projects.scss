@@ -1,4 +1,10 @@
 .portfolio {
+    img {
+        transition: 0.3s;
+    }
+    img:hover {
+        transform: scale(1.1);
+    }
     &__container {
         &-card {
             display: flex;
