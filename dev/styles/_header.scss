@@ -5,6 +5,7 @@
     background-attachment: fixed;
     height: 100vh;
     &__nav {
+        position: relative;
         display: flex;
         justify-content: space-between;
         flex-flow: row wrap;
@@ -26,6 +27,11 @@
             width: 60%;
             position: relative;
             margin-bottom: 50px;
+            @media (max-width: 575px) {
+                & {
+                    border-left: 12px solid $mahogany;
+                }
+            }
         }
         &-text:before {
             position: absolute;
@@ -35,6 +41,11 @@
             top: 22px;
             width: 12px;
             background: $mahogany;
+            @media (max-width: 575px) {
+                & {
+                    display: none;
+                }
+            }
         }
         &-description {
             max-width: 435px;

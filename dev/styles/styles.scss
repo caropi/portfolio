@@ -31,6 +31,9 @@ li {
     max-width: 1170px;
     width: 65%;
     margin: 0 auto;
+    @media (max-width:1023px) {
+        width: 80%;
+    }
 }
 
 .visuallyhidden:not(:focus):not(:active) {

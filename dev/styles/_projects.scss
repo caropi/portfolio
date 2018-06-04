@@ -5,15 +5,36 @@
             flex-direction: row;
             justify-content: space-between;
             padding: 50px 0;
+            @media (max-width: 1297px) {
+                & {
+                    flex-direction: column;
+                    text-align: center;
+                }
+                &.to-bottom {
+                    flex-direction: column-reverse;
+                }
+            }
         }        
         &-card-screenshot {
             width: calc(50% - 20px);
+            @media (max-width: 1287px) {
+                & {
+                    width: 100%;
+                    padding-top: 30px;
+                }
+            }
             img {
                 width: 100%;
             }
         }
         &-card-text {
             width: 45%;
+            @media (max-width: 1297px) {
+                width: 100%;
+                p {
+                    display: none;
+                }
+            }
         }
     }
 }

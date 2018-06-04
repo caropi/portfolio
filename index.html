@@ -19,8 +19,7 @@
             <a href="#home" class="header__nav-name-home">
                 <h2>CP</h2>
             </a>
-
-            <ul class="header__nav-list">
+            <ul class="header__nav-list menu">
                 <li>
                     <a href="#about">About</a>
                 </li>
@@ -49,6 +48,7 @@
                 <div class="about__container-text">
                     <h3 class="about__container-heading">Hello.</h3>
                     <div class="about__container-description">
+                        <img src="assets/2018-spring-caroline-pisano-4.jpg" alt="Photo of Caroline sitting on the red HackerYou chair" class="hide-image">
                         <p>I'm a web developer based in Toronto, Canada. Prior to studying web development at HackerYou, I worked
                             in the publishing industry for 3.5 years distributing eBooks to several retailers and wholesalers
                             (talk ONIX to me!). Time travel roughly 2 decades ago and you would have found me learning to
@@ -65,62 +65,73 @@
                 </div>
             </div>
         </section>
-        <!--   jquery, responsive design -->
-
-        <section class="skills" id="skills">
+        <section class="skills " id="skills">
             <div class="section-heading">
                 <h3>Skills.</h3>
             </div>
-            <ul class="skills__list wrapper clearfix">
-                <li>
-                    <i class="fab fa-html5"></i>
-                </li>
-                <li>
-                    <i class="fab fa-css3-alt"></i>
-                </li>
-                <li>
-                    <i class="fab fa-sass"></i>
-                </li>
-                <li>
-                    <i class="fab fa-gulp"></i>
-                </li>
-                <li>
-                    <i class="fab fa-git"></i>
-                </li>
-                <li>
-                    <i class="fab fa-github-alt"></i>
-                </li>
-                <li>
-                    <i class="fab fa-js"></i>
-                </li>
-                <li>
-                    <svg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'>
-                        <path d='M80,67C47,121-25,60,10,22C5,89,70,80,80,67zM30,16C2,42,56,87,80,47C70,57,24,57,30,16M50,10C45,34,72,37,80,31C57,55,32,21,50,10z'
-                        />
-                    </svg>
-                </li>
-                <li>
-                    <i class="fab fa-react"></i>
-                </li>
-                <li>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 351"
-                        enable-background="new 0 0 256 351" space="preserve">
-                        <path d="M0,282.998l2.123-2.973L102.527,89.512l0.212-2.017L58.479,4.358c-3.708-6.964-14.148-5.204-15.365,2.592
-                L0,282.998z" />
-                        <path d="M135.005,150.381l32.955-33.751l-32.964-62.93c-3.13-5.957-11.867-5.974-14.963,0l-17.612,33.589v2.861
-                L135.005,150.381z" />
-                        <path d="M139.121,347.551l116.275-64.848L222.191,78.209c-1.039-6.398-8.888-8.928-13.467-4.34L0,282.998
-                l115.608,64.547C122.915,351.625,131.812,351.627,139.121,347.551" />
-                    </svg>
-                </li>
-            </ul>
+            <div class="wrapper">
+                <ul class="skills__list clearfix">
+                    <li>
+                        <i class="fab fa-html5"></i>
+                        <h6>HTML5</h6>
+                    </li>
+                    <li>
+                        <i class="fab fa-css3-alt"></i>
+                        <h6>CSS3</h6>
+                    </li>
+                    <li>
+                        <i class="fab fa-sass"></i>
+                        <h6>SASS</h6>
+                    </li>
+                    <li>
+                        <i class="fab fa-gulp"></i>
+                        <h6>Gulp</h6>
+                    </li>
+                    <li>
+                        <i class="fab fa-git"></i>
+                        <h6>Git</h6>
+                    </li>
+                    <li>
+                        <i class="fab fa-github-alt"></i>
+                        <h6>github</h6>
+                    </li>
+                    <li>
+                        <i class="fab fa-js"></i>
+                        <h6>Javascript</h6>
+                    </li>
+                    <li>
+                        <svg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'>
+                            <path d='M80,67C47,121-25,60,10,22C5,89,70,80,80,67zM30,16C2,42,56,87,80,47C70,57,24,57,30,16M50,10C45,34,72,37,80,31C57,55,32,21,50,10z'
+                            />
+                        </svg>
+                        <h6>jQuery</h6>
+                    </li>
+                    <li>
+                        <i class="fab fa-react"></i>
+                        <h6>React</h6>
+                    </li>
+                    <li>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 351"
+                            enable-background="new 0 0 256 351" space="preserve">
+                            <path d="M0,282.998l2.123-2.973L102.527,89.512l0.212-2.017L58.479,4.358c-3.708-6.964-14.148-5.204-15.365,2.592
+                    L0,282.998z" />
+                            <path d="M135.005,150.381l32.955-33.751l-32.964-62.93c-3.13-5.957-11.867-5.974-14.963,0l-17.612,33.589v2.861
+                    L135.005,150.381z" />
+                            <path d="M139.121,347.551l116.275-64.848L222.191,78.209c-1.039-6.398-8.888-8.928-13.467-4.34L0,282.998
+                    l115.608,64.547C122.915,351.625,131.812,351.627,139.121,347.551" />
+                        </svg>
+                        <h6>Firebase</h6>
+                    </li>
+                </ul>
+            </div>
+            <!-- /wrapper -->
         </section>
         <section class="portfolio" id="portfolio">
             <div class="section-heading">
                 <h3 class="portfolio__heading">Latest Works.</h3>
             </div>
             <div class="portfolio__container wrapper">
-                <div class="portfolio__container-card">
+                <div class="portfolio__container-card to-bottom">
                     <div class="portfolio__container-card-screenshot">
                         <a href="http://carolinepisano.com/simpleflex/" target="_blank">
                             <img src="assets/simpleflex.png" alt="Screenshot of Simpleflex page">
@@ -155,7 +166,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="portfolio__container-card">
+                <div class="portfolio__container-card to-bottom">
                     <div class="portfolio__container-card-screenshot">
                         <a href="ttp://www.carolinepisano.com/ineedahero" target="_blank">
                             <img src="assets/ineedahero.png" alt="Screenshot of I Need a Hero page">
@@ -194,7 +205,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="portfolio__container-card">
+                <div class="portfolio__container-card to-bottom">
                     <div class="portfolio__container-card-screenshot">
                         <a href="https://whattoreadapp.firebaseapp.com/" target="_blank">
                             <img src="assets/getlit.png" alt="Screenshot of Get Lit page">

@@ -3,10 +3,27 @@
     background: $granny-smith;
     display: flex;
     flex-direction: row;
+    .hide-image {
+        display: none
+    }
+
     &__container {
         position: relative;
         &-text {
-            width: 50%
+            width: 50%;
+            @media (max-width: 1023px) {
+                & {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            @media (max-width:592px) {
+                & {
+                    p {
+                        clear: both;
+                    }
+                }
+            }
         }
         &-description {
             position: relative;
@@ -18,6 +35,39 @@
                 max-width: 450px;
                 border: 50px solid $stark-white;
                 box-shadow: 0 0 100px darken($granny-smith, 5);
+                @media (max-width:1023px) {
+                    & {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1023px) {
+        & {
+            flex-direction: column;
+        }
+        &__container-description {
+
+            .hide-image {
+                float: left;
+                overflow: hidden;
+                display: block;
+                position: relative;
+                left: 0;
+                top: 0;
+                width: 20%;
+                min-width: 300px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                @media (max-width: 592px) {
+                    & {
+                        min-width: 100%;
+                        width: 100%;
+                        margin: 0 auto 20px;
+
+                    }
+                }
             }
         }
     }
