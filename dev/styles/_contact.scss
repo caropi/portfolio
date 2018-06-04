@@ -23,6 +23,7 @@
                 transition: 0.3s all;
                 padding: 20px 20px;
                 resize: none;
+                border-radius: 0;
                 &:hover, &:focus {
                     border-bottom: 2px solid $urobilin;
                 }
