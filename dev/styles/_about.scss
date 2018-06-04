@@ -3,6 +3,9 @@
     background: $granny-smith;
     display: flex;
     flex-direction: row;
+    @media (max-width: 1000px) {
+        padding-top: 50px;
+    }
     .hide-image {
         display: none
     }
