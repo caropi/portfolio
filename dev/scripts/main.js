@@ -13,7 +13,12 @@ $(function(){
         };
 
         hamburger.navToggle.addEventListener('click', function (e) { hamburger.doToggle(e); });
-
+        $(".header__topbar-nav > ul > li > a").on('click touch', () => {
+            if ($('.header__topbar-nav').hasClass('expanded')) {
+                $('.header__topbar-nav').toggleClass('expanded')
+                $('.navToggle').toggleClass('expanded')
+            }
+        })
     }());
 
     $(document).on('click', 'a[href^="#"]', function (event) {
@@ -23,4 +28,5 @@ $(function(){
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
     });
+
 })

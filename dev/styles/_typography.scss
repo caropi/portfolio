@@ -65,23 +65,23 @@
             background: lighten($urobilin, 15);
             padding: 12px;
             @media (max-width: 500px) {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
         }
         &-jumpto {
             font-family: $headings;
-            width: 210px;
+            width: 172px;
             padding: 18px;
             text-transform: uppercase;
             font-size: 1.8rem;
             font-family: $headings;
             font-weight: 700;
-            border: 2px solid $big-stone;
-            background: linear-gradient( rgba($stark-white, 0.5), rgba($stark-white, 0.5));
+            border: 2px solid $mahogany;
+            background: $mahogany;
             border-top-left-radius: 20px;
             border-bottom-right-radius: 20px;
-            text-align: center;
-            color: $big-stone;
+            text-align: left;
+            color: $stark-white;
             transition: 0.3s;
             letter-spacing: 1px;
             @media (max-width: 320px) {
@@ -91,9 +91,9 @@
             }
         }
         &-jumpto:hover, &-jumpto:focus {
-            background: $mahogany;
+            background: $granny-smith;
             color: $stark-white;
-            border: 2px solid $mahogany;
+            border: 2px solid $granny-smith;
             text-shadow: none;
         }
     }
