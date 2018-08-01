@@ -1,177 +1,177 @@
 .header {
-    background: url(../../assets/hero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
-    @media (max-width: 800px) {
-        background-attachment: scroll;
+  background: url(../../assets/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  @media (max-width: 800px) {
+    background-attachment: scroll;
+  }
+  &__topbar {
+    position: relative;
+    height: 13vh;
+    width: 100%;
+
+    .navToggle,
+    .navToggleBar {
+      display: none;
+      position: absolute;
+      @media (max-width: 800px) {
+        display: block;
+      }
     }
-    &__topbar {
-        position: relative;
-        height: 13vh;
-        width: 100%;
-        
-        .navToggle, .navToggleBar {
-            display: none;
-            position: absolute;
-            @media (max-width:800px) {
-                display: block;
-            }
-        }
-        .navToggle {
-            -webkit-user-select: none;
-            -moz-uder-select: none;
-            user-select: none;
-            height: 2rem;
-            position: fixed;
-            top: 5%;
-            right: 3%;
-            width: 3.3rem;
-            z-index: 4;
-            transition: 0.3s all ease-in-out;
-        }    
-        .navToggle:hover {
-            opacity: 0.8;
-        }    
-        // ANIMATIONS FOR HAMBURGER TOGGLE
-        .navToggle .navToggleBar,
-        .navToggle .navToggleBar::after,
-        .navToggle .navToggleBar::before {
-            position: absolute;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -ms-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-            background: darken($urobilin, 10);
-            content: '';
-            height: 3px;
-            width: 100%; 
-            z-index: 4;
-        }
+    .navToggle {
+      -webkit-user-select: none;
+      -moz-uder-select: none;
+      user-select: none;
+      height: 2rem;
+      position: fixed;
+      top: 5%;
+      right: 3%;
+      width: 3.3rem;
+      z-index: 4;
+      transition: all 0.3s ease-in-out;
+    }
+    .navToggle:hover {
+      opacity: 0.8;
+    }
+    // ANIMATIONS FOR HAMBURGER TOGGLE
+    .navToggle .navToggleBar,
+    .navToggle .navToggleBar::after,
+    .navToggle .navToggleBar::before {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      background: darken($urobilin, 10);
+      content: "";
+      height: 3px;
+      width: 100%;
+      z-index: 4;
+    }
 
+    .navToggle .navToggleBar {
+      margin-top: 0;
+    }
 
-        .navToggle .navToggleBar {
-            margin-top: 0; 
-        }
+    .navToggle .navToggleBar::after {
+      margin-top: 0.8rem;
+    }
 
-        .navToggle .navToggleBar::after {
-            margin-top: 0.8rem; 
-        }
+    .navToggle .navToggleBar::before {
+      margin-top: -0.8rem;
+    }
 
-        .navToggle .navToggleBar::before {
-            margin-top: -0.8rem; 
-        }
+    .navToggle.expanded .navToggleBar {
+      background: transparent;
+    }
+    .navToggle.expanded .navToggleBar::after,
+    .navToggle.expanded .navToggleBar::before {
+      background: $mahogany;
+      margin-top: 0;
+    }
 
-        .navToggle.expanded .navToggleBar {
-            background: transparent; 
-        }
-        .navToggle.expanded .navToggleBar::after, .navToggle.expanded .navToggleBar::before {
-            background: $mahogany;
-            margin-top: 0; 
-        }
+    .navToggle.expanded .navToggleBar::after {
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
 
-        .navToggle.expanded .navToggleBar::after {
-            -ms-transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-            transform: rotate(45deg); 
-        }
-
-        .navToggle.expanded .navToggleBar::before {
-            -ms-transform: rotate(-45deg);
-            -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg); 
-        }    
-        // END OF TOGGLE ANIMATIONS
-        &-nav {
-            height: 13vh;
-            display: flex;
-            justify-content: flex-end;
-            width: 70%;
-            -webkit-transition: left 0.5s ease;
-            -moz-transition: left 0.5s ease;
-            -ms-transition: left 0.5s ease;
-            -o-transition: left 0.5s ease;
-            transition: left 0.5s ease;
-            z-index: 1;
-            @media (max-width: 800px) {
-                & {
-                    display: none;
-                }
-            }
-            &-list {
-                justify-content: space-between;
-                width: 350px;
-                padding-left: 0;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-            }
-        }
-        &-nav.expanded {
-            background: linear-gradient( rgba($stark-white, 0.95), rgba($stark-white,0.95));
-            transition: 0.3s all ease-in-out;
-            display: block;
-            position: fixed;
-            right: 0;
-            top: 0;
-            margin: 0;
+    .navToggle.expanded .navToggleBar::before {
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+    // END OF TOGGLE ANIMATIONS
+    &-nav {
+      height: 13vh;
+      display: flex;
+      justify-content: flex-end;
+      width: 70%;
+      transition: top 1s ease;
+      z-index: 1;
+      @media (max-width: 800px) {
+        & {
+          position: absolute;
+          top: -1000px;
+          background: linear-gradient(
+            rgba($stark-white, 0.95),
+            rgba($stark-white, 0.95)
+          );
+          width: 100%;
+          height: 50vh;
+          ul {
             width: 100%;
             height: 50vh;
-            z-index: 2;
-            ul {
-                width: 100%;
-                height: 50vh;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-around;
-                li {
-                    padding-left: 8%;
-                    a {
-                        font-size: 2.5rem;
-                    }
-                }
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            li {
+              padding-left: 8%;
+              a {
+                font-size: 2.5rem;
+              }
             }
+          }
         }
-    }
-    &__hero {
+      }
+      &-list {
+        justify-content: space-between;
+        width: 350px;
+        padding-left: 0;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 80vh;
-        &-text {
-            width: 60%;
-            position: relative;
-            margin-bottom: 50px;
-            @media (max-width: 575px) {
-                & {
-                    border-left: 12px solid $mahogany;
-                }
-            }
-        }
-        &-text:before {
-            position: absolute;
-            content: '';
-            height: 175px;
-            left: 0px;
-            top: 22px;
-            width: 12px;
-            background: $mahogany;
-            @media (max-width: 575px) {
-                & {
-                    display: none;
-                }
-            }
-        }
-        &-description {
-            max-width: 435px;
-            margin-top: 0;
-            margin-bottom: 44px;
-        }
+        flex-direction: row;
+        align-items: center;
+      }
     }
+    &-nav.expanded {
+      display: block;
+      position: fixed;
+      right: 0;
+      top: 0;
+      margin: 0;
+      z-index: 2;
+    }
+  }
+  &__hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    &-text {
+      width: 60%;
+      position: relative;
+      margin-bottom: 50px;
+      @media (max-width: 575px) {
+        & {
+          border-left: 12px solid $mahogany;
+        }
+      }
+    }
+    &-text:before {
+      position: absolute;
+      content: "";
+      height: 175px;
+      left: 0px;
+      top: 22px;
+      width: 12px;
+      background: $mahogany;
+      @media (max-width: 575px) {
+        & {
+          display: none;
+        }
+      }
+    }
+    &-description {
+      max-width: 435px;
+      margin-top: 0;
+      margin-bottom: 44px;
+    }
+  }
 }
