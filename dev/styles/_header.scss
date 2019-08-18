@@ -4,9 +4,11 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
+
   @media (max-width: 800px) {
     background-attachment: scroll;
   }
+
   &__topbar {
     position: relative;
     height: 13vh;
@@ -16,10 +18,12 @@
     .navToggleBar {
       display: none;
       position: absolute;
+
       @media (max-width: 800px) {
         display: block;
       }
     }
+
     .navToggle {
       -webkit-user-select: none;
       -moz-uder-select: none;
@@ -32,9 +36,11 @@
       z-index: 4;
       transition: all 0.3s ease-in-out;
     }
+
     .navToggle:hover {
       opacity: 0.8;
     }
+
     // ANIMATIONS FOR HAMBURGER TOGGLE
     .navToggle .navToggleBar,
     .navToggle .navToggleBar::after,
@@ -71,6 +77,7 @@
     .navToggle.expanded .navToggleBar {
       background: transparent;
     }
+
     .navToggle.expanded .navToggleBar::after,
     .navToggle.expanded .navToggleBar::before {
       background: $mahogany;
@@ -88,6 +95,7 @@
       -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg);
     }
+
     // END OF TOGGLE ANIMATIONS
     &-nav {
       height: 13vh;
@@ -96,24 +104,30 @@
       width: 70%;
       transition: top 1s ease-in-out;
       z-index: 1;
+
       @media (max-width: 800px) {
         & {
           position: absolute;
           top: -1000px;
-          background: linear-gradient(
-            rgba($stark-white, 0.95),
-            rgba($stark-white, 0.95)
-          );
+          background: linear-gradient(rgba($stark-white, 0.95),
+              rgba($stark-white, 0.95));
           width: 100%;
           height: 50vh;
+
           ul {
             width: 100%;
             height: 50vh;
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
+
             li {
               padding-left: 8%;
+
+              @media (max-width: 800px) {
+                padding-left: 0;
+              }
+
               a {
                 font-size: 2.5rem;
               }
@@ -121,6 +135,7 @@
           }
         }
       }
+
       &-list {
         justify-content: space-between;
         width: 350px;
@@ -130,6 +145,7 @@
         align-items: center;
       }
     }
+
     &-nav.expanded {
       display: block;
       position: fixed;
@@ -139,21 +155,25 @@
       z-index: 2;
     }
   }
+
   &__hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 80vh;
+
     &-text {
       width: 60%;
       position: relative;
       margin-bottom: 50px;
+
       @media (max-width: 575px) {
         & {
           border-left: 12px solid $mahogany;
         }
       }
     }
+
     &-text:before {
       position: absolute;
       content: "";
@@ -162,12 +182,14 @@
       top: 22px;
       width: 12px;
       background: $mahogany;
+
       @media (max-width: 575px) {
         & {
           display: none;
         }
       }
     }
+
     &-description {
       max-width: 435px;
       margin-top: 0;

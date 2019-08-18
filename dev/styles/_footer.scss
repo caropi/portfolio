@@ -1,23 +1,34 @@
 .footer {
     position: relative;
     padding: 100px 0;
+
     &__list {
         display: flex;
         padding: 0;
         flex-flow: row wrap;
+
         li {
-            padding-right: 30px;
-            font-size: 1.4rem;
+            margin-right: 30px;
+            font-size: 1.7rem;
             line-height: 24px;
+            transition: 0.3s all;
+
+            &:hover {
+                transform: scale(2);
+            }
+
             a {
                 color: $big-stone;
                 transition: 0.3s all;
-                &:focus, &:hover {
+
+                &:focus,
+                &:hover {
                     color: $rose-fog;
                 }
             }
         }
     }
+
     &:before {
         content: '';
         position: absolute;
@@ -26,10 +37,12 @@
         width: 110px;
         height: 1px;
         background: $big-stone;
+
         @media (max-width: 362px) {
             display: none;
         }
     }
+
     .home-stickie {
         position: absolute;
         left: 50%;
@@ -42,7 +55,9 @@
         border-top-left-radius: 20px;
         border-bottom-right-radius: 20px;
         transition: 0.3s all;
-        &:hover, &:focus {
+
+        &:hover,
+        &:focus {
             color: #fbf9f4;
             background: $rose-fog;
         }
