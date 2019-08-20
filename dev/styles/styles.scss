@@ -7,6 +7,8 @@
 @import 'projects';
 @import 'contact';
 @import 'footer';
+@import 'slick-theme';
+@import 'slick';
 
 //GLOBAL STYLES
 
@@ -57,8 +59,8 @@ li {
     z-index: 999;
     background: white;
     color: black;
-    }
+}
 
-    .skip-link:focus {
-        left: 0;
-    }
+.skip-link:focus {
+    left: 0;
+}

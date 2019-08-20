@@ -1,45 +1,54 @@
 .portfolio {
     img {
+        width: 500px;
         transition: 0.3s;
     }
+
     img:hover {
         transform: scale(1.1);
+
         @media (max-width: 500px) {
             transform: none;
         }
     }
+
     &__container {
         &-card {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             padding: 50px 0;
+
             @media (max-width: 900px) {
                 & {
                     flex-direction: column;
                     text-align: center;
                 }
-                &.to-bottom {
-                    flex-direction: column-reverse;
-                }
             }
-        }        
+        }
+
         &-card-screenshot {
+
             width: calc(50% - 20px);
+
             @media (max-width: 900px) {
                 & {
                     width: 100%;
                     padding-top: 50px;
                 }
             }
+
             img {
                 width: 100%;
             }
         }
+
         &-card-text {
             width: 45%;
+
             @media (max-width: 900px) {
                 width: 100%;
+
                 p {
                     display: none;
                 }

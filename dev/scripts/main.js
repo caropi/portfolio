@@ -29,4 +29,10 @@ $(function(){
         }, 500);
     });
 
+    $(".portfolio__container").slick({
+        slidesToShow: 1,
+        dots: true,
+        infinite: true,
+        variableWidth: true
+    });
 })
