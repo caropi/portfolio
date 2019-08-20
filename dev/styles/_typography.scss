@@ -186,7 +186,23 @@
                 font-weight: 400;
                 line-height: 28px;
 
-                &--contact {
+                p a {
+                    color: $stark-white;
+                    font-weight: bolder;
+                    text-decoration: underline;
+                    font-size: inherit;
+                    display: inline-block;
+                    margin: 0;
+                    padding: 0;
+                    text-transform: none;
+                    font-family: "Merriweather", serif;
+
+                    &:hover {
+                        animation: none;
+                    }
+                }
+
+                a {
                     margin-top: 49px;
                     margin-bottom: 120px;
                     display: block;
