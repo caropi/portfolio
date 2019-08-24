@@ -33,6 +33,10 @@ $(function(){
         slidesToShow: 1,
         dots: true,
         infinite: true,
-        variableWidth: true
+        variableWidth: true,
+        adaptiveHeight: true,
+        lazyLoad: 'onDemand',
+        accessibility: true,
+        arrows: true
     });
 })
