@@ -28,7 +28,6 @@ $(function(){
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
     });
-
     $(".portfolio__container").slick({
         slidesToShow: 1,
         dots: true,

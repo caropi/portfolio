@@ -7,8 +7,6 @@
 @import 'projects';
 @import 'contact';
 @import 'footer';
-@import 'slick-theme';
-@import 'slick';
 
 //GLOBAL STYLES
 
@@ -31,7 +29,7 @@ li {
 
 .wrapper {
     max-width: 1170px;
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
 
     @media (max-width:1023px) {
