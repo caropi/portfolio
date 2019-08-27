@@ -38,3 +38,31 @@
         }
     }
 }
+
+.slick-prev,
+.slick-next {
+    z-index: 90;
+    font-size: 2.5vw;
+}
+
+.slick-prev {
+    left: -4vw;
+}
+
+.slick-next {
+    right: -3vw;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: $big-stone;
+    opacity: none;
+}
+
+.slick-dots {
+    bottom: -2.5vw;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 7vw;
+}
