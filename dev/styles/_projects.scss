@@ -7,6 +7,12 @@
             display: flex !important;
             flex-direction: row;
             justify-content: space-between;
+
+            @media (max-width: 810px) {
+                & {
+                    flex-direction: column;
+                }
+            }
         }
 
         &-card-screenshot {
@@ -17,6 +23,12 @@
                 & {
                     width: 100%;
                     padding-top: 50px;
+                }
+            }
+
+            @media (max-width: 810px) {
+                & {
+                    padding-top: 0;
                 }
             }
 

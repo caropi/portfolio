@@ -29,13 +29,21 @@ $(function(){
         }, 500);
     });
     $(".portfolio__container").slick({
-        slidesToShow: 1,
-        dots: true,
-        infinite: true,
-        variableWidth: true,
-        adaptiveHeight: true,
-        lazyLoad: 'onDemand',
-        accessibility: true,
-        arrows: true
+      slidesToShow: 1,
+      dots: true,
+      infinite: true,
+      variableWidth: true,
+      adaptiveHeight: true,
+      lazyLoad: "onDemand",
+      accessibility: true,
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 810,
+          settings: {
+            arrows: false
+          }
+        }
+      ]
     });
 })
