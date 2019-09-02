@@ -44,8 +44,8 @@
     }
 
     .home-stickie {
-        position: absolute;
         left: 50%;
+        position: relative;
         transform: translateX(-50%);
         top: 0;
         font-size: 2rem;
