@@ -37,6 +37,11 @@
         &-description {
             position: relative;
 
+            p {
+                margin: 0 0 2%;
+
+            }
+
             img {
                 position: absolute;
                 left: 110%;
@@ -51,6 +56,12 @@
                         display: none;
                     }
                 }
+            }
+
+            &--skills {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
             }
         }
     }

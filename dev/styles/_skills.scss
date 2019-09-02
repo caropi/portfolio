@@ -8,23 +8,25 @@
     }
 
     &__list {
-        text-align: center;
         padding-left: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: $rose-fog;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background: darken($rose-fog, 12);
         border-top-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        width: 40%;
-        color: lighten($stark-white, 15);
+        width: 48%;
+        color: lighten($stark-white, 5);
         padding: 2vw;
+        margin: 0;
 
         h4 {
             font-family: 'Montserrat';
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             margin: 0 0 5%;
+            line-height: 1.1;
+            width: 70%;
         }
 
         li {
@@ -33,18 +35,29 @@
             }
 
             h6 {
-                font-size: 1rem;
+                font-size: 1.2rem;
+                text-align: left;
                 clear: both;
-                margin: 3px 0;
+                margin: 0;
                 font-family: $headings;
                 text-transform: uppercase;
             }
 
         }
 
-        svg {
-            width: 60%;
+        &--title {
+            position: relative;
+            width: 100%;
+        }
+
+        img {
+            border: none;
+            left: 100%;
+            top: 0;
+            box-shadow: none;
+            width: 30%;
             padding-top: 5px;
+            min-width: 35px;
         }
     }
 }
