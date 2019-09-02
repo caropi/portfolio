@@ -18,7 +18,7 @@
         border-bottom-right-radius: 20px;
         width: 48%;
         color: lighten($stark-white, 5);
-        padding: 2vw;
+        padding: 1.5vw 1.5vw 1.1vw;
         margin: 0;
 
         h4 {
@@ -27,12 +27,13 @@
             margin: 0 0 5%;
             line-height: 1.1;
             width: 70%;
+
+            @media (max-width: 1400px) {
+                font-size: 2vw;
+            }
         }
 
         li {
-            @media (max-width: 1462px) {
-                margin: 12px;
-            }
 
             h6 {
                 font-size: 1.2rem;
@@ -52,7 +53,7 @@
 
         img {
             border: none;
-            left: 100%;
+            left: 70%;
             top: 0;
             box-shadow: none;
             width: 30%;

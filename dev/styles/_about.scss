@@ -18,6 +18,10 @@
         &-text {
             width: 50%;
 
+            @media (max-width: 1400px) {
+                width: 57%;
+            }
+
             @media (max-width: 1023px) {
                 & {
                     width: 100%;
@@ -50,6 +54,10 @@
                 max-width: 450px;
                 border: 50px solid $stark-white;
                 box-shadow: 0 0 100px darken($granny-smith, 5);
+
+                @media (max-width: 1400px) {
+                    width: 72%;
+                }
 
                 @media (max-width:1023px) {
                     & {
