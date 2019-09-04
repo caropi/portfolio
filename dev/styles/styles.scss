@@ -13,6 +13,7 @@
 html {
     font-size: 62.5%;
     font-family: $main-text;
+    overflow-x: hidden;
 }
 
 body {
@@ -26,6 +27,7 @@ a {
 li {
     list-style-type: none;
 }
+
 
 .wrapper {
     max-width: 1170px;
