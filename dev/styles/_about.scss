@@ -59,10 +59,12 @@
                     width: 72%;
                 }
 
-                @media (max-width:1023px) {
-                    & {
-                        display: none;
-                    }
+
+            }
+
+            @media (max-width:1023px) {
+                img.hideOnMobile {
+                    display: none;
                 }
             }
 

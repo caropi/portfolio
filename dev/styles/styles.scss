@@ -13,10 +13,10 @@
 html {
     font-size: 62.5%;
     font-family: $main-text;
-    overflow-x: hidden;
 }
 
 body {
+    overflow-x: hidden;
     background: lighten($stark-white, 15);
 }
 

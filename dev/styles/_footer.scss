@@ -1,6 +1,10 @@
 .footer {
     position: relative;
-    padding: 100px 0;
+    padding: 10% 0 15%;
+
+    @media (max-width: 449px) {
+        padding-bottom: 25%;
+    }
 
     &__list {
         display: flex;
@@ -44,16 +48,18 @@
     }
 
     .home-stickie {
+        position: absolute;
         left: 50%;
-        position: relative;
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
-        top: 0;
+        bottom: 3vw;
         font-size: 2rem;
-        color: $rose-fog;
+        color: #e3c1b0;
         padding: 15px;
-        border: 1px solid $rose-fog;
+        border: 1px solid #e3c1b0;
         border-top-left-radius: 20px;
         border-bottom-right-radius: 20px;
+        -webkit-transition: 0.3s all;
         transition: 0.3s all;
 
         &:hover,

@@ -35,14 +35,14 @@ $(function(){
       adaptiveHeight: true,
       lazyLoad: "onDemand",
       accessibility: true,
-      arrows: true
-    //   responsive: [
-    //     {
-    //       breakpoint: 810,
-    //       settings: {
-    //         arrows: false
-    //       }
-    //     }
-    //   ]
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 810,
+          settings: {
+            arrows: false
+          }
+        }
+      ]
     });
 })

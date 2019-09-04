@@ -31,6 +31,11 @@
             @media (max-width: 1400px) {
                 font-size: 2vw;
             }
+
+            @media (max-width: 810px) {
+                font-size: 4vw;
+                width: 60%;
+            }
         }
 
         li {
@@ -59,6 +64,29 @@
             width: 30%;
             padding-top: 5px;
             min-width: 35px;
+        }
+
+        @media (max-width: 1023px) {
+            img {
+                width: 20%;
+                left: 80%;
+            }
+        }
+
+        @media (max-width: 810px) {
+            padding: 2.5vw 2.5vw 2.1vw;
+
+            img {
+                width: 25%;
+                left: 75%;
+                display: block !important;
+            }
+        }
+
+        @media (max-width: 425px) {
+            img {
+                display: none;
+            }
         }
     }
 }
