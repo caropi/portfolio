@@ -2,11 +2,20 @@
     padding-top: 2%;
 
     &__container {
+        @media (max-width: 810px) {
+            margin-bottom: 13vw !important;
+        }
+
         &-card {
-            width: 70vw !important;
             display: flex !important;
             flex-direction: row;
             justify-content: space-between;
+
+            @media (max-width: 950px) {
+                & {
+                    justify-content: space-around;
+                }
+            }
 
             @media (max-width: 810px) {
                 & {
@@ -24,20 +33,19 @@
             @media (max-width: 900px) {
                 & {
                     width: 100%;
-                    padding-top: 50px;
                 }
             }
+        }
 
-            @media (max-width: 810px) {
+        img {
+            transition: 0.3s;
+            width: 100%;
+            display: inline-block !important;
+
+            @media (max-width: 900px) {
                 & {
-                    padding-top: 0;
+                    width: 100%;
                 }
-            }
-
-            img {
-                transition: 0.3s;
-                width: 100%;
-                display: inline-block !important;
             }
         }
 
@@ -51,9 +59,17 @@
                     display: none;
                 }
             }
+
+            @media (max-width: 810px) {
+                & {
+                    padding-bottom: 5vw;
+                }
+            }
         }
     }
+
 }
+
 
 .slick-list {
     height: 100% !important;
@@ -70,7 +86,17 @@
 }
 
 .slick-next {
-    right: -3vw;
+    right: -2vw;
+}
+
+@media (max-width: 1000px) {
+    .slick-prev {
+        left: -8vw;
+    }
+
+    .slick-next {
+        right: -4vw;
+    }
 }
 
 .slick-prev:before,
