@@ -4,44 +4,36 @@ export default {
   title: "Hero",
   fields: [
     {
-      name: 'heading',
-      type: 'string',
-      title: 'Heading'
+      name: "heading",
+      type: "string",
+      title: "Heading",
     },
     {
-      name: 'tagline',
-      type: 'string',
-      title: 'Tagline'
+      name: "tagline",
+      type: "string",
+      title: "Tagline",
     },
     {
-      name: 'image',
-      type: 'image',
-      title: 'Image',
-      options: {
-        hotspot: true,
-      },
-      fields: [
-        {
-          name: 'alt',
-          type: 'string',
-          title: 'Alternative text'
-        }
-      ]
+      name: "picture",
+      type: "picture",
+      title: "Image",
     },
-        {
-      name: 'bgImage',
-      type: 'image',
-      title: 'Background Image',
-      options: {
-        hotspot: true,
-      },
-      fields: [
-        {
-          name: 'alt',
-          type: 'string',
-          title: 'Alternative text'
-        }
-      ]
-    }
-  ]
-}
+    {
+      name: "backgroundImage",
+      type: "picture",
+      title: "Background Image",
+    },
+    // {
+    //   name: "bgImage",
+    //   type: "image",
+    //   title: "Background Image",
+    //   fields: [
+    //     {
+    //       name: "alt",
+    //       type: "string",
+    //       title: "Alternative text",
+    //     },
+    //   ],
+    // },
+  ],
+};

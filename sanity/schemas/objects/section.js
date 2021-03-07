@@ -9,29 +9,9 @@ export default {
       title: "Heading",
     },
     {
-      name: "class",
-      type: "string",
-      title: "Class",
-    },
-    {
-      name: "image",
-      type: "image",
+      name: "picture",
+      type: "picture",
       title: "Image",
-      options: {
-        hotspot: true,
-      },
-      fields: [
-        {
-          name: "alt",
-          type: "string",
-          title: "Alternative text",
-        },
-        {
-          name: "class",
-          type: "string",
-          title: "Class",
-        },
-      ],
     },
     {
       name: "list",
