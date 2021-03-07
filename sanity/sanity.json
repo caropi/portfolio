@@ -16,7 +16,9 @@
     "media",
     "dashboard-widget-gatsby",
     "seo-tools",
-    "@sanity/code-input"
+    "@sanity/code-input",
+    "asset-source-unsplash",
+    "color-list"
   ],
   "env": {
     "development": {
