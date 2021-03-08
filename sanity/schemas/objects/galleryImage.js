@@ -4,19 +4,34 @@ export default {
   title: "Image",
   fields: [
     {
+      name: "alt",
+      type: "string",
+      title: "Alternative text",
+    },
+    {
       name: "title",
       type: "string",
       title: "Title",
     },
     {
-      name: "description",
+      name: "subheading",
       type: "string",
-      title: "Description",
+      title: "Subheading",
     },
     {
-      name: "alt",
+      name: "richText",
+      type: "contentBlock",
+      title: "Rich Text",
+    },
+    {
+      name: "copyShort",
       type: "string",
-      title: "Alternative text",
+      title: "Copy Short",
+    },
+    {
+      name: "hyperlinkCopy",
+      type: "string",
+      title: "Hyperlink Copy",
     },
     {
       name: "hyperlink",
