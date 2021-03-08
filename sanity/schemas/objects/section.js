@@ -14,6 +14,11 @@ export default {
       title: "Image",
     },
     {
+      name: "richText",
+      type: "contentBlock",
+      title: "Rich Text",
+    },
+    {
       name: "list",
       type: "array",
       title: "List",

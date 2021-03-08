@@ -19,6 +19,7 @@ import section from "./objects/section";
 import portableText from "./objects/portableText";
 import picture from "./objects/picture";
 import galleryImage from "./objects/galleryImage";
+import contentBlock from "./objects/contentBlock";
 
 export default createSchema({
   name: "default",
@@ -33,6 +34,7 @@ export default createSchema({
     copyShort,
     section,
     picture,
+    contentBlock,
     galleryImage,
     portableText,
     imageGallery,

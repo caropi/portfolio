@@ -8104,6 +8104,13 @@ sanity-plugin-dashboard-widget-gatsby@^1.0.9:
     abort-controller "^2.0.3"
     react-props-stream "^1.0.0"
 
+sanity-plugin-json-input@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/sanity-plugin-json-input/-/sanity-plugin-json-input-0.1.0.tgz#f851cc43c3619a3524b786ec933e33f16d78346e"
+  dependencies:
+    lodash "^4.17.4"
+    react-ace "^5.0.1"
+
 sanity-plugin-media@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/sanity-plugin-media/-/sanity-plugin-media-1.1.2.tgz#6b7e77de858e04d0007cdc22192b4225c64b262d"

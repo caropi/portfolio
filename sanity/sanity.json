@@ -18,7 +18,8 @@
     "seo-tools",
     "@sanity/code-input",
     "asset-source-unsplash",
-    "color-list"
+    "color-list",
+    "json-input"
   ],
   "env": {
     "development": {
