@@ -19,13 +19,45 @@ const Query = () => {
             _key
             _type
             heading
+            tagline
             backgroundImage {
               asset {
                 fluid {
-                  base64
-                  srcWebp
-                  srcSetWebp
+                  ...GatsbySanityImageFluid_noBase64
                 }
+              }
+            }
+          }
+          ... on SanitySection {
+            _key
+            _type
+            heading
+            list {
+              heading
+              listItems
+              picture {
+                asset {
+                  fluid {
+                    ...GatsbySanityImageFluid_noBase64
+                  }
+                }
+              }
+            }
+            picture {
+              asset {
+                fluid {
+                  ...GatsbySanityImageFluid_noBase64
+                }
+              }
+            }
+            richText {
+              _key
+              _rawChildren(resolveReferences: { maxDepth: 10 })
+              children {
+                _key
+                _type
+                text
+                marks
               }
             }
           }

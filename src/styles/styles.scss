@@ -1,0 +1,141 @@
+@import "./colors.scss";
+
+// SETTING BOOTSTRAP COLOR VARIABLES
+$enable-shadows: true;
+
+// THEME COLOR MAP
+// ADDING CUSTOM COLORS FOR CUSTOM FONT COLORS
+// ** THIS WILL LIKELY BE EVERGREEN**
+$theme-colors: (
+  "primary": $green,
+  "secondary": $green,
+  "success": $green,
+  "warning": $red,
+  "yellow": $yellow,
+  "yellow-light": $yellow-light,
+  "pink": $pink,
+  "red": $red,
+  "black": $black,
+  "green": $green,
+  "white": $white,
+  "beige": $offWhite,
+);
+
+$sizes: (
+  "10": 10%,
+  "15": 15%,
+  "20": 20%,
+  "25": 25%,
+  "30": 30%,
+  "35": 35%,
+  "40": 40%,
+  "45": 45%,
+  "60": 60%,
+  "65": 65%,
+  "70": 70%,
+  "75": 75%,
+  "80": 80%,
+  "85": 85%,
+  "90": 90%,
+  "95": 95%,
+);
+// CHANGING DEFAULT + ADDING MORE SPACER
+$spacer: 1.5rem;
+$spacers: (
+  1: (
+    $spacer * 0.4,
+  ),
+  25: (
+    $spacer * 0.8
+      // half value between spacer 2 and spacer 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+  ),
+  6: (
+    $spacer * 3.5,
+  ),
+  7: (
+    $spacer * 4,
+  ),
+  8: (
+    $spacer * 4.5,
+  ),
+);
+
+// CHANGING SANS-SERIF DEFAULT
+// TO CHANGE THE DEFAULT BODY TEXT
+$font-family-sans-serif: "Merriweather", serif;
+$body-color: $black;
+$headings-font-family: "Montserrat", sans-serif;
+$headings-font-weight: 800;
+
+// CREATING FONT MIXINS
+@mixin serif-font {
+  font-family: $headings-font-family;
+}
+
+// CHANGING DEFAULT FONT SIZES
+$font-size-base: 1rem; //16px
+$font-size-lg: $font-size-base * 1.125;
+$font-size-sm: $font-size-base * 0.77; //14px
+
+// CHANGING DEFAULT HEADING SIZES
+// THIS IS FINAL
+$h1-font-size: $font-size-base * 3.4; //56px
+$h2-font-size: $font-size-base * 2.5; // 50px
+$h3-font-size: $font-size-base * 1.77; // 32px
+$h4-font-size: $font-size-base * 1.125; // 22px
+$h5-font-size: $font-size-base * 1.125; // 22px
+
+$headings-font-weight: 700;
+
+$btn-font-weight: bold;
+$btn-default-color: $red;
+
+// IMPORTING ALL OF BOOTSTRAP
+// SHOULD THIS BE REFACTORED TO ONLY INCLUDE THE PARTS WE NEED?
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+$body-bg: $beige !default;
+$body-color: $black !default;
+
+// FONT
+
+// DEFAULT FONT SIZES
+$font-size-base: 1rem; //16px
+$lead-font-size: $font-size-base * 1.5 !default; // 24px
+
+// HEADING SIZES
+$h1-font-size: $font-size-base * 4.5;
+$h2-font-size: $font-size-base * 2.25; // 36px
+$h3-font-size: $font-size-base * 1.5; // 24px
+
+$headings-font-weight: 800;
+$font-weight-normal: 300;
+
+$link-color: $black;
+$btn-default-color: $black;
+
+body {
+  background: $white;
+}
+
+h1 {
+  font-size: $h1-font-size;
+  font-family: $headings-font-family;
+  @include media-breakpoint-down(sm) {
+    font-size: 2.625rem;
+  }
+}
+
+.header {
+  background-attachment: fixed;
+  &:before,
+  &:after {
+    background-attachment: fixed;
+  }
+  &__hero {
+    &-text {
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  }
+}
