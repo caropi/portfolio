@@ -1,6 +1,7 @@
 import React from "react";
 
 import SEO from "@common/SEO";
+import "@styles/styles.scss";
 
 export default function Layout(props) {
   return (

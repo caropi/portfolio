@@ -38,10 +38,6 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
-      resolve: `gatsby-plugin-purgecss`,
-      options: { tailwind: true },
-    },
-    {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
@@ -57,10 +53,15 @@ module.exports = {
           "@images": "./src/images",
           "@pages": "./src/pages",
           "@queries": "./src/queries",
+          "@styles": "./src/styles",
         },
       },
     },
-    `gatsby-plugin-postcss`,
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: { develop: false },
+    },
     `gatsby-plugin-offline`,
     {
       resolve: "gatsby-plugin-brotli",

@@ -1,4 +1,6 @@
-import "./src/styles/global.css";
+import "@fontsource/montserrat";
+import "@fontsource/montserrat/700.css";
+import "@fontsource/merriweather";
 
 export const onClientEntry = async () => {
   // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
