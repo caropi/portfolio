@@ -9,8 +9,8 @@ export default function Section(props) {
   return (
     <section className="bg-green text-beige ">
       <div className="container py-6">
-        <div className="row flex-wrap">
-          <div className="col-md-7">
+        <div className="row flex-wrap justify-space-between align-items-center">
+          <div className="col-md-6">
             <h2>{props.block.heading}</h2>
             <PortableText blocks={props.raw.richText} />
           </div>

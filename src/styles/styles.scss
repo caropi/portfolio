@@ -48,7 +48,7 @@ $spacers: (
   ),
   25: (
     $spacer * 0.8
-      // half value between spacer 2 and spacer 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      // half value between spacer 2 and spacer 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
   ),
   6: (
     $spacer * 3.5,
@@ -165,4 +165,9 @@ a {
       fill: darken($green, 15);
     }
   }
+}
+
+.skill__list {
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
 }

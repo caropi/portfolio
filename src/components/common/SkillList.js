@@ -3,7 +3,7 @@ import React from "react";
 export default function SkillList({ item }) {
   return (
     <div className="col-md-6 mt-3">
-      <div className="bg-pink-dark p-3 h-100">
+      <div className="bg-pink-dark p-3 h-100 skill__list">
         <div className="d-flex align-items-center">
           <h3 className="col-8 p-0 m-0">{item.heading}</h3>
           <img
