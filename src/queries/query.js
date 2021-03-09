@@ -38,7 +38,7 @@ const Query = () => {
               picture {
                 asset {
                   fluid {
-                    ...GatsbySanityImageFluid_noBase64
+                    src
                   }
                 }
               }

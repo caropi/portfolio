@@ -14,13 +14,11 @@ export default function Layout(props) {
         canonical={"http://www.carolinepisano.com"}
       />
       {props.children}
-      <footer className="bg-blue">
-        <div className="container-lg text-center">
-          <p>
-            Copyright ©{new Date().getFullYear()} Caroline Pisano. Made with 🍜
-            &amp; 🐈
-          </p>
-        </div>
+      <footer className="bg-blue my-6 container">
+        <p className="h6 text-black">
+          Copyright ©{new Date().getFullYear()} Caroline Pisano. Made with 🍜
+          &amp; 🐈
+        </p>
       </footer>
     </div>
   );
