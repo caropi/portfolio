@@ -48,7 +48,7 @@ $spacers: (
   ),
   25: (
     $spacer * 0.8
-      // half value between spacer 2 and spacer 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      // half value between spacer 2 and spacer 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
   ),
   6: (
     $spacer * 3.5,
@@ -92,7 +92,7 @@ $btn-font-weight: bold;
 $btn-default-color: $red;
 
 // IMPORTING ALL OF BOOTSTRAP
-// SHOULD THIS BE REFACTORED TO ONLY INCLUDE THE PARTS WE NEED?
+// PURGE CSS SHOULD REMOVE UNUSED PARTS
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 $body-bg: $beige !default;
@@ -161,8 +161,8 @@ a {
 .animation {
   svg {
     path {
-      stroke: $offWhite;
-      fill: $offWhite;
+      stroke: darken($green, 15);
+      fill: darken($green, 15);
     }
   }
 }
