@@ -33,6 +33,7 @@ const Query = () => {
             _type
             heading
             list {
+              _key
               heading
               listItems
               picture {

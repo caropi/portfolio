@@ -4,6 +4,7 @@ import SkillList from "@common/SkillList";
 import Lottie from "lottie-react";
 
 import animationData from "@images/animation.json";
+import LottieAnimation from "./LottieAnimation";
 
 export default function Section(props) {
   return (
@@ -15,10 +16,11 @@ export default function Section(props) {
             <PortableText blocks={props.raw.richText} />
           </div>
           <div className="col-5 d-flex align-items-center animation">
-            <Lottie animationData={animationData} height={400} width={400} />
+            <LottieAnimation json={animationData} />
+            {/* <Lottie animationData={animationData} height={400} width={400} /> */}
           </div>
         </div>
-        <div className="row">
+        <div className="row justify-content-between">
           {props.block.list.map((i) => (
             <SkillList item={i} key={i._key} />
           ))}
